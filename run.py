@@ -46,8 +46,7 @@ def main():
     print('\n')
 
     while True:
-                    print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, ex -exit the account list ")#del -delete an account you no longer want to use
-
+                    print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, ex -exit the account list, del -delete an account you no longer want to use ")
                     short_code = input().lower()
 
                     if short_code == 'ca':
@@ -96,20 +95,17 @@ def main():
                             else:
                                     print("That account does not exist")
 
-                    # elif short_code == 'del':
+                    elif short_code == 'del':
 
-                    #         print("Enter the user name you want to delete")
+                            print("Enter the user name you want to delete")
 
-                    #         search_account = input()
-                    #         if account_exist(search_account):
-                    #                 search_account = find_by_username(search_account)
-                    #                 print(f"{search_account.userName} {search_account.Pword}")
-                    #                 print('-' * 20)
-
-                    #                 print(f"User Name.......{search_account.userName}")
-                    #                 print(f"Password.......{search_account.Pword}")
-                    #         else:
-                    #                 print("That account deleted successfully!")                
+                            search_account = input()
+                            if account_exist(search_account):
+                                   search_account = find_by_username(search_account)
+                                   delete_account(search_account)
+                                   print("Account deleted successfully!")
+                            else:
+                                   print("Account not deleted !")                
 
                     elif short_code == "ex":
                             print("Bye .......")
