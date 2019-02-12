@@ -94,16 +94,16 @@ class TestUserAccount(unittest.TestCase):
         account_exists = UserAccount.account_exist("TestNewAcc")
 
         self.assertTrue(account_exists)    
-#
-#
-    # def test_display_all_contacts(self):
-    #     '''
-    #     method that returns a list of all contacts saved
-    #     '''
 
-    #     self.assertEqual(Contact.display_contacts(),Contact.contact_list)
 
-#
+    def test_display_all_accounts(self):
+        '''
+        method that returns a list of all accounts saved
+        '''
+
+        self.assertEqual(UserAccount.display_accounts(),UserAccount.account_list)
+
+
     def test_save_account(self):
         '''
         test_save_account test case to test if the account object is saved into
