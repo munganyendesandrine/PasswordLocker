@@ -69,18 +69,18 @@ class TestUserAccount(unittest.TestCase):
         self.new_account.delete_account()# Deleting an account object
         self.assertEqual(len(UserAccount.account_list),1)
 
-    # def test_find_contact_by_number(self):
-    #     '''
-    #     test to check if we can find a contact by phone number and display information
-    #     '''
+    def test_find_account_by_username(self):
+        '''
+        test to check if we can find an account by username and display information
+        '''
 
-    #     self.new_contact.save_contact()
-    #     test_contact = Contact("Test","user","0711223344","test@user.com") # new contact
-    #     test_contact.save_contact()
+        self.new_account.save_account()
+        test_account = UserAccount("TestNewAcc","userPword") # new account
+        test_account.save_account()
 
-    #     found_contact = Contact.find_by_number("0711223344")
+        found_account = UserAccount.find_by_username("TestNewAcc")
 
-    #     self.assertEqual(found_contact.email,test_contact.email)
+        self.assertEqual(found_account.userName,test_account.userName)
 
     # def test_contact_exists(self):
     #     '''
