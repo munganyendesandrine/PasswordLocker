@@ -16,3 +16,9 @@ This project facilitates the user to manage her/his passwords and even generate 
 
 `
 
+## Technologies used
+
+* Python 3.6
+* Linux/Ubuntu
+
+
