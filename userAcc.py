@@ -1,3 +1,4 @@
+import pyperclip
 class UserAccount:
     """
     Class that generates new instances of contacts.
@@ -56,6 +57,11 @@ class UserAccount:
         method that returns the account list
         '''
         return cls.account_list
+
+    @classmethod
+    def copy_userName(cls,userName):
+        account_found = UserAccount.find_by_username(userName)
+        pyperclip.copy(account_found.userName)    
 
     def __init__(self,userName,Pword):
 
