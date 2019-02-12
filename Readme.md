@@ -2,3 +2,8 @@
 `
 This project intitled "PASSWORD LOCKER" was generated with Python 3.6
 `
+# Author
+
+`
+MUNGANYENDE SANDRINE
+`
