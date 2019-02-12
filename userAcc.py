@@ -10,8 +10,15 @@ class UserAccount:
         '''
         save_account method saves account objects into account_list
         '''
-
+    
         UserAccount.account_list.append(self)
+
+    def delete_account(self):
+
+        '''
+        delete_account method deletes a saved account from the account_list
+        '''
+        UserAccount.account_list.remove(self)
 
     def __init__(self,userName,Pword):
 

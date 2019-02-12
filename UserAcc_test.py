@@ -56,17 +56,18 @@ class TestUserAccount(unittest.TestCase):
         test_account.save_account()
         self.assertEqual(len(UserAccount.account_list),2)
 
-    # # More tests above
-    # def test_delete_contact(self):
-    #         '''
-    #         test_delete_contact to test if we can remove a contact from our contact list
-    #         '''
-    #         self.new_contact.save_contact()
-    #         test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
-    #         test_contact.save_contact()
+    # More tests above
+    def test_delete_account(self):
+        '''
+        test_delete_account to test if we can remove an account from our account list
+        '''
+        
+        self.new_account.save_account()
+        test_account = UserAccount("TestNewAcc","userPword") # new account
+        test_account.save_account()
 
-    #         self.new_contact.delete_contact()# Deleting a contact object
-    #         self.assertEqual(len(Contact.contact_list),1)
+        self.new_account.delete_account()# Deleting an account object
+        self.assertEqual(len(UserAccount.account_list),1)
 
     # def test_find_contact_by_number(self):
     #     '''
