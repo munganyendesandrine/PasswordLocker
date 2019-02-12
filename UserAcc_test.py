@@ -28,35 +28,33 @@ class TestUserAccount(unittest.TestCase):
         self.assertEqual(self.new_account.Pword,"Muriuki12!")
        
 
+    def test_save_multiple_account(self):
+        '''
+        test_save_multiple_account to check if we can save multiple accounts
+        objects to our account_list
+        '''
+        self.new_account.save_account()
+        test_account = UserAccount("TestNewAcc","userPword") # new account
+        test_account.save_account()
+        self.assertEqual(len(UserAccount.account_list),2)
 
-#
-       # def test_save_multiple_contact(self):
-    #         '''
-    #         test_save_multiple_contact to check if we can save multiple contact
-    #         objects to our contact_list
-    #         '''
-    #         self.new_contact.save_contact()
-    #         test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
-    #         test_contact.save_contact()
-    #         self.assertEqual(len(Contact.contact_list),2)
+    # setup and class creation up here
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case has run.
+        '''
+        UserAccount.account_list = []
 
-    # # setup and class creation up here
-    # def tearDown(self):
-    #         '''
-    #         tearDown method that does clean up after each test case has run.
-    #         '''
-    #         Contact.contact_list = []
-
-    # # other test cases here
-    # def test_save_multiple_contact(self):
-    #         '''
-    #         test_save_multiple_contact to check if we can save multiple contact
-    #         objects to our contact_list
-    #         '''
-    #         self.new_contact.save_contact()
-    #         test_contact = Contact("Test","user","0712345678","test@user.com") # new contact
-    #         test_contact.save_contact()
-    #         self.assertEqual(len(Contact.contact_list),2)
+    # other test cases here
+    def test_save_multiple_account(self):
+        '''
+        test_save_multiple_account to check if we can save multiple accounts
+        objects to our account_list
+        '''
+        self.new_account.save_account()
+        test_account = UserAccount("TestNewAcc","userPword") # new account
+        test_account.save_account()
+        self.assertEqual(len(UserAccount.account_list),2)
 
     # # More tests above
     # def test_delete_contact(self):
