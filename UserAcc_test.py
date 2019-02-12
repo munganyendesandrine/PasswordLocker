@@ -105,13 +105,13 @@ class TestUserAccount(unittest.TestCase):
     #     self.assertEqual(Contact.display_contacts(),Contact.contact_list)
 
 #
-    # def test_save_contact(self):
-    #     '''
-    #     test_save_contact test case to test if the contact object is saved into
-    #      the contact list
-    #     '''
-    #     self.new_contact.save_contact() # saving the new contact
-    #     self.assertEqual(len(Contact.contact_list),1)
+    def test_save_account(self):
+        '''
+        test_save_account test case to test if the account object is saved into
+         the account list
+        '''
+        self.new_account.save_account() # saving the new account
+        self.assertEqual(len(UserAccount.account_list),1)
 
     # def test_copy_email(self):
     #     '''
