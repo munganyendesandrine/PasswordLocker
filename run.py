@@ -47,6 +47,7 @@ def main():
 
     while True:
                     print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, ex -exit the account list, del -delete an account you no longer want to use ")
+                    print('\n')
                     short_code = input().lower()
 
                     if short_code == 'ca':
@@ -63,6 +64,7 @@ def main():
                             save_account(create_account(userName,Pword)) # create and save new account.
                             print ('\n')
                             print(f"New Account {userName} {Pword} created")
+                            print(f"The Password length is {len(Pword)} for the password you created")
                             print ('\n')
 
                     elif short_code == 'da':
@@ -92,8 +94,10 @@ def main():
 
                                     print(f"User Name.......{search_account.userName}")
                                     print(f"Password.......{search_account.Pword}")
+                                    print ('\n')
                             else:
                                     print("That account does not exist")
+                                    print ('\n')
 
                     elif short_code == 'del':
 
@@ -104,14 +108,18 @@ def main():
                                    search_account = find_by_username(search_account)
                                    delete_account(search_account)
                                    print("Account deleted successfully!")
+                                   print ('\n')
                             else:
-                                   print("Account not deleted !")                
+                                   print("Account not deleted !")   
+                                   print ('\n')             
 
                     elif short_code == "ex":
                             print("Bye .......")
                             break
+                            print ('\n')
                     else:
                             print("I really didn't get that. Please use the short codes")
+                            print ('\n')
 
 if __name__ == '__main__':
 
