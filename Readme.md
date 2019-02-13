@@ -32,6 +32,10 @@ You would need the following to access the website:
 
 https://github.com/munganyendesandrine/PasswordLocker
 
+## Contact Information
+
+For more information you may need, contact me at mungasandwingsd@gmail.com
+
 ## Copyright and License Information
 
 Copyright©2019 PasswordLocker Application
