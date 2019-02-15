@@ -9,14 +9,14 @@ MUNGANYENDE SANDRINE
 `
 # Description of project
 
-`
+
 This project facilitates the user to manage her/his passwords and even generate new ones.This will help the user to remember all passwords she/he has and even create new ones for different accounts he/she has signed into, be it email, social media, entertainment or job portal accounts. 
 
 By managing his/her passwords, this means that the user will be prompted to choose whether to create an account, display the username and password as well as the length of the password created, find an account, delete an account or to exit the prompt area.
 
 According to what the user chooses to do, he/she gets the message that fit to the action performed.
 
-`
+
 
 ## Technologies used
 
