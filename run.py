@@ -46,7 +46,7 @@ def main():
     print('\n')
 
     while True:
-                    print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, ex -exit the account list, del -delete an account you no longer want to use ")
+                    print("Use these short codes : ca - create a new account, da - display accounts, fa -find an account, del -delete an account you no longer want to use, ex -exit the account list ")
                     print('\n')
                     short_code = input().lower()
 
